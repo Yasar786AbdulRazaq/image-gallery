@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US"> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Image Gallery</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      /* Add this CSS to control the image size */
+      #current-image {
+        width: 500px; /* Set your desired width */
+        height: 300px; /* Set your desired height */
+        object-fit: cover; /* Ensure the image scales to fit without distortion */
+      }
+    </style>
+  </head> 
+  <body> 
+    <div class="intro"> 
+      <h2>This is my personal Image Gallery</h2> 
+      <h4>Select a thumbnail below to view the image</h4> 
+      <div id="image-gallery">
+        <button id="prev-btn" class="nav-btn">&#10094;</button> <!-- Previous Button -->
+        <img id="current-image" src="images/image1.jpg" alt="image1"> <!-- Adjusted src path -->
+        <button id="next-btn" class="nav-btn">&#10095;</button> <!-- Next Button -->
+        <div id="image-thumbs"></div> <!-- Placeholder for thumbnails -->
+      </div> <!-- Closing div for image-gallery -->
+    </div> 
+    <script src="script.js"></script>
+  </body>
+</html>
+
